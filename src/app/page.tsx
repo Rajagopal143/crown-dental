@@ -101,7 +101,7 @@ export default function Home() {
             </motion.h2>
 
             <div className="grid md:grid-cols-3 gap-8 relative">
-              {services.map((service, index) => (
+              {services.map((service:any, index:any) => (
                 <motion.div
                   key={service.title}
                   initial={{ opacity: 0, y: 50, scale: 0.95 }}
@@ -152,7 +152,7 @@ export default function Home() {
                     >
                       <div className="pt-4 border-t border-border/20">
                         <ul className="list-disc pl-5 text-sm text-cyan-800/90">
-                          {service.details?.map((detail, i) => (
+                          {service.details?.map((detail:any, i:any) => (
                             <li key={i} className="mb-2">{detail}</li>
                           ))}
                         </ul>
