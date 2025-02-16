@@ -2,12 +2,8 @@
 import { Footerdemo } from "@/components/ui/footer-section";
 import { NavBar, NavItem } from "@/components/ui/tubelight-navbar";
 import { Briefcase, FileText, HomeIcon, Phone, ServerCog, User } from "lucide-react";
-import { motion } from "framer-motion";
-import AnimatedWords from "@/components/framer-motion/TextOneByOne";
 import Image from "next/image";
-import RevealImage from "@/components/framer-motion/Framer-Image";
 import AboutSection from "@/components/AboutSection";
-import CircularTextSpinner from "@/components/SpinnerText";
 import { HeroSection } from "@/components/HeroSection";
 import  ServiceSection  from "@/components/ServiceSection";
 import WhyChooseUs from "@/components/WhyyouChooseus";
