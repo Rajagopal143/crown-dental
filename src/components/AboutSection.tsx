@@ -6,7 +6,7 @@ import { CircleCheck } from "lucide-react"
 
 export default function AboutSection() {
     return (
-        <section className="py-10 min-h-screen">
+        <section id="aboutus" className="py-10 min-h-screen">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-8 max-sm:gap-40 items-center">
                     <motion.div

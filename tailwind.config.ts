@@ -11,7 +11,7 @@ export default {
 		extend: {
 			colors: {
 				pred: "#E0212B",
-				pblue: "#1C3C90", 
+				pblue: "#0956A9", 
 				lblue: "#E8EEF9",
 				ndark: "#333333",
 				nlight: "#FAFAFA",

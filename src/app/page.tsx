@@ -8,14 +8,15 @@ import { HeroSection } from "@/components/HeroSection";
 import  ServiceSection  from "@/components/ServiceSection";
 import WhyChooseUs from "@/components/WhyyouChooseus";
 import TeamSection from "@/components/TeamSection";
+import ContactNow from "@/components/ContactUs";
 
 export default function Home() {
   const navItems = [
-    { name: 'Home', url: '#', icon: HomeIcon },
+    { name: 'Home', url: '#home', icon: HomeIcon },
     { name: 'Services', url: '#service', icon: Briefcase },
     { name: 'Doctors', url: '#doctor', icon: FileText },
-    { name: 'Treatments', url: '#', icon: ServerCog },
-    { name: 'Contact', url: '#', icon: Phone }
+    { name: 'About us', url: '#aboutus', icon: ServerCog },
+    { name: 'Contact', url: '#contact', icon: Phone }
   ]
 
   return (
@@ -25,8 +26,9 @@ export default function Home() {
       <HeroSection />
       <ServiceSection />
       <WhyChooseUs/>
-      <AboutSection />
       <TeamSection/>
+      <AboutSection />
+      <ContactNow/>
 
       <Footerdemo />
     </>
