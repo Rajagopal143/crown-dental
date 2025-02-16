@@ -85,3 +85,6 @@
     @apply bg-clip-text text-transparent;
   }
 }
+html {
+  scroll-behavior: smooth;
+}

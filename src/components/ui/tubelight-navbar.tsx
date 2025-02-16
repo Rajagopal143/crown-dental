@@ -45,6 +45,7 @@ export function NavBar({ items, className }: NavBarProps) {
 
           return (
             <Link
+              scroll={true}
               key={item.name}
               href={item.url}
               onClick={() => setActiveTab(item.name)}
