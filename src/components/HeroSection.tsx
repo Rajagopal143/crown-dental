@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ArrowDown01Icon, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 export const HeroSection = () => {
@@ -13,16 +14,16 @@ export const HeroSection = () => {
             >
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="text-left space-y-6 relative">
-                        <h1 className="text-5xl font-bold bg-gradient-to-r from-[#E0212B] to-[#1C3C90] bg-clip-text text-transparent max-sm:text-center">
-                            Experience Dental Excellence with a Gentle Touch
+                        <h1 className="text-5xl font-bold text-pblue max-sm:text-center">
+                            Experience <span className="text-pred"> Dental Excellence</span> with a Gentle Touch
                         </h1>
                         <p className="text-ndark">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:shadow-lg transition-shadow"
+                            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-5 py-3 rounded-full text-lg font-semibold hover:shadow-lg transition-shadow flex items-center gap-3"
                         >
-                            Make an Appointment
+                            Make an Appointment <ArrowUpRight className="bg-white  text-pred rounded-full"/>
                         </motion.button>
                     </div>
                     <div className="relative ">
@@ -107,7 +108,7 @@ export const HeroSection = () => {
                         className=" "
                     >
 
-                        <Image src="/hero-img.png" width={1000} height={1000} alt="Logo" className="w-full px-20 max-sm:p-10 " />
+                        <Image src="/hero-img.png" width={1000} height={1000} alt="Logo" className="w-full px-20 max-sm:p-10 py-8 " />
                         </motion.div>
                     </div>
                 </div>
