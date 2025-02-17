@@ -4,7 +4,7 @@ import Image from "next/image";
 export const HeroSection = () => {
    
     return (
-        <section id="home" className="relative flex items-center justify-center shadow-md max-sm:mt-28 max-md:mt-28 min-h-screen">
+        <section id="home" className="relative flex  mt-0  shadow-md max-sm:mt-28 max-md:mt-28 min-h-screen">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -31,24 +31,24 @@ export const HeroSection = () => {
                             width={1000}
                             height={1000}
                             alt="Logo"
-                            className="absolute w-10 h-10 right-1 top-32 rounded-full bg-white shadow-lg p-4 box-content"
+                            className="absolute w-10 h-10 right-14 top-32 rounded-full bg-white shadow-lg p-4 box-content"
                         />
                         <Image
                             src="/hero-icon-2.svg"
                             width={1000}
                             height={1000}
                             alt="Logo"
-                            className="absolute w-10 h-10 left-5 top-80 rounded-full bg-white shadow-lg p-4 box-content "
+                            className="absolute w-10 h-10 left-14 top-72 rounded-full bg-white shadow-lg p-4 box-content "
                         />
                         <Image
                             src="/hero-icon-3.svg"
                             width={1000} 
                             height={1000}
                             alt="Logo"
-                            className="absolute w-10 h-10 bottom-10 right-5 rounded-full bg-white shadow-lg p-4 box-content "
+                            className="absolute w-10 h-10 bottom-10 right-14 rounded-full bg-white shadow-lg p-4 box-content "
                         />
                         <motion.div
-                            className="w-40 h-16 absolute z-10 bottom-[120px] left-20 flex gap-4 justify-center items-center bg-white rounded-lg"
+                            className="w-40 h-16 absolute z-10 bottom-[110px] left-20 flex gap-4 justify-center items-center bg-white rounded-lg"
                             initial={{ x: 0 }}
                             animate={{
                                 x: [0, 20, 0], // Move from 0 → 20px → 0
@@ -107,12 +107,18 @@ export const HeroSection = () => {
                         className=" "
                     >
 
-                        <Image src="/hero-img.png" width={1000} height={1000} alt="Logo" className="w-full p-28 md:p-10 max-sm:p-10" />
+                        <Image src="/hero-img.png" width={1000} height={1000} alt="Logo" className="w-full px-20 max-sm:p-10 " />
                         </motion.div>
                     </div>
-
                 </div>
             </motion.div>
+                    <Image
+                        src="/icon-star-1.svg"
+                        width={1000}
+                        height={1000}
+                        alt="Logo"
+                        className="absolute w-16 h-16 opacity-20 bottom-0 left-10"
+                    />
         </section>
 
     )
