@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { BlurFade } from "./ui/blur-fade"
-import { MapPinHouse, Phone } from "lucide-react"
+import { Mail, MapPinHouse, Phone } from "lucide-react"
 import { Button } from "./ui/button"
 
 const container = {
@@ -58,7 +58,7 @@ export default function ContactNow() {
 
                             <p className="text-gray-600 mb-6 flex gap-2">
                                 <MapPinHouse className="text-pblue"/>
-                            241 Robert Road, New York, USA
+                            3224 W Grant Line Road Tracy, CA 95304
                         </p>
                         </BlurFade>
                         <div className="space-y-3 text-gray-600 mb-6">
@@ -66,16 +66,14 @@ export default function ContactNow() {
 
                             <div className="flex items-center gap-2 ">
                                 <Phone className="text-pblue" />
-                                (+12) 3456 7890
+                                209-730-7000
                             </div>
                             </BlurFade>
                             <BlurFade delay={1.2} inView>
 
                             <div className="flex items-center gap-2">
-                                <svg className="w-5 h-5 text-pblue" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M19.25 3h-14.5C3.784 3 3 3.784 3 4.75v14.5c0 .966.784 1.75 1.75 1.75h14.5c.966 0 1.75-.784 1.75-1.75V4.75c0-.966-.784-1.75-1.75-1.75zm-7.25 11.913L5.821 8.734c-.282-.224-.069-.677.282-.677h11.794c.351 0 .564.453.282.677l-6.179 6.179c-.293.293-.768.293-1.061 0z" />
-                                </svg>
-                                info@domain.com
+                                    <Mail className="text-pblue" />
+                                info@trwcy.com
                             </div>
                             </BlurFade>
                         </div>
