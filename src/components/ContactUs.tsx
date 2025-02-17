@@ -20,19 +20,19 @@ const item = {
 
 export default function ContactNow() {
     return (
-        <section id="contact" className=" min-h-screen flex justify-center items-center px-28">
-            <div className="container mx-auto px-4">
+        <section id="contact" className=" min-h-[60vh] flex justify-center items-center px-28 max-sm:px-0 sm:py-10">
+            <div className="container mx-auto px-4 ">
                 <motion.div
                     variants={container}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
-                    className="grid md:grid-cols-2 gap-8 items-center"
+                    className="grid md:grid-cols-2 gap-8   items-center"
                 >
                     <motion.div initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        viewport={{ once: true }} className="rounded-lg overflow-hidden shadow">
+                        viewport={{ once: true }} className="rounded-lg overflow-hidden shadow ">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24175.851514782265!2d-0.15289076044921854!3d51.507341599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876056dcdcb07fd%3A0x3d7d1f3d9a72fd0a!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1675690224526!5m2!1sen!2suk"
                             width="100%"

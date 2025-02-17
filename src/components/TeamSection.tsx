@@ -73,9 +73,9 @@ export default function TeamSection() {
                 <motion.div
                     variants={container}
                     initial="hidden"
-                    whileInView="show"
+whileInView="show"
                     viewport={{ once: true }}
-                    className="grid md:grid-cols-4 "
+                    className="grid grid-cols-4 max-md:grid-cols-2 gap-2 max-sm:grid-cols-1 "
                 >
                     {teamMembers.map((member, i) => (
                         <motion.div

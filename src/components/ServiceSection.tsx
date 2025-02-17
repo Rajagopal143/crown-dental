@@ -73,14 +73,14 @@ const ServiceSection = () => {
         <section
             id="service"
             ref={sectionRef}
-            className="py-20 bg-gradient-to-b from-background shadow-md relative overflow-hidden"
+            className="py-20 bg-gradient-to-b from-background  relative overflow-hidden"
         >
             <div className="container mx-auto px-4 z-50">
                 <h2 className="text-5xl font-bold text-center mb-5 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
                     Our Services
                 </h2>
 
-                <div className="grid md:grid-cols-3 gap-8 relative max-sm:grid-cols-2">
+                <div className="grid md:grid-cols-3 gap-8 relative max-sm:grid-cols-1 max-md:grid-cols-2">
                     {services.map((service, index) => (
                         <div
                             key={service.title}
